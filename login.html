@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(135, 19, 96), rgb(163, 68, 36));
+        }
+
+        /* #upper {
+            height: 20px;
+            background-color: rgb(16, 243, 16);
+        }
+
+        #mar {
+            height: 50px;
+            background: linear-gradient(to bottom, white, rgb(162, 82, 82));
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        #lower {
+            height: 30px;
+            background-color: rgb(16, 243, 16);
+        }
+
+        #form {
+            background: linear-gradient(to top, rgb(95, 191, 164), rgb(162, 82, 82));
+            height: 400px;
+            width: 500px;
+            box-shadow: 3px;
+        }
+
+        div button {
+            background-color: red;
+            color: aliceblue;
+            border: white;
+            color: aliceblue;
+            height: 30px;
+            width: 80px;
+        }
+
+        div button:hover {
+            cursor: pointer;
+            height: 50px;
+            width: 120px;
+        }
+
+        div a:hover {
+            cursor: pointer;
+            height: 50px;
+            width: 120px;
+        }
+
+        table {}
+
+         h1 {} */
+        #mar {
+            height: 50px;
+            font-size: 40px;
+            font-style: italic;
+            color: white;
+            border-style: none;
+            border-bottom-color: black;
+        }
+
+        #marq {
+            padding-top: 100px;
+            height: 50px;
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        #form {
+            background: linear-gradient(to left, rgb(149, 22, 107), rgb(147, 58, 28));
+            height: 250px;
+            width: 600px;
+            margin-top: 100px;
+            box-shadow: 3px;
+            border-style: none;
+            border-radius: 10px;
+            color: white;
+        }
+
+        input {
+            width: 300px;
+        }
+
+        footer {
+            scroll-behavior: auto;
+            font-size: 20px;
+            color: white;
+            font: bold;
+            background: linear-gradient(to left, rgb(135, 9, 93), rgb(173, 61, 23));
+            height: 70px;
+            border-color: none;
+            border-radius: 5px;
+            padding-top: 15px;
+        }
+
+        h1 {
+            padding-top: 15px;
+        }
+
+        option {
+            cursor: pointer;
+            border-style: solid;
+            border-radius: 10px;
+            background-color: aqua;
+            color: red;
+        }
+
+        /* #line{
+
+            color: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="upper"></div>
+    <div align="center" id="mar">
+        Welcome to Shopping-Time
+        <!-- <div id="line"><hr></div> -->
+    </div>
+
+    <div id="lower"></div>
+    <center>
+        <div id="form" align="center">
+            <form action="">
+                <h1>Login Panel</h1>
+                <table>
+                    <tr>
+                        <td><label for="">Username</label></td>
+                        <td><input type="text" palceholder="Enter Name"></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr>
+                    <tr>
+                        <td><label for="">Password</label></td>
+                        <td><input type="password" id="show" palceholder="Enter Password"></td>
+                        <td>
+                            <option onclick="myfunction()">Show Password</option>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <button>Login</button>
+                <br>
+                <a href="C:\Programming Language\Web Dev\HTML\website\competitation 31\mywebsite.html">
+                    <u style="color: blue;" align="right"><br>Home Page</u>
+                </a>
+            </form>
+        </div>
+        <div align="center" id="marq">
+            <marquee behavior="" direction="left to right">
+                **Welcome to Shopping-Times**
+            </marquee>
+    </center>
+    <script>
+        function myfunction() {
+            var x = document.getElementById("show");
+            if (x.type === "password") {
+                x.type = "text";
+            }
+            else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+<br><br><br><br><br><br><br><br><br>
+<footer align="center">
+    &copy;Copyright SISTec, Gandhinagar | < Disigned & Developed by CSE Depatt.>
+</footer>
+
+</html>
