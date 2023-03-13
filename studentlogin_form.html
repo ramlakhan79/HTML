@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Diary Cloud</title>
+    <style>
+        body {
+            background-color: rgb(12, 27, 163);
+        }
+
+        #mar {
+            height: 50px;
+            font-size: 40px;
+            color: white;
+            border-style: none;
+        }
+
+        #logo {
+            height: 120px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            width: 80%;
+            font-size: 50%;
+            margin-top: -24px;
+        }
+
+        #form {
+            background-color: white;
+            height: 450px;
+            width: 350px;
+            margin-top: 100px;
+            box-shadow: 3px;
+            border-style: none;
+            border-radius: 25px;
+            color: white;
+        }
+
+        .inpt {
+            width: 275px;
+            height: 30px;
+            margin: 10px;
+            margin-left: 20px;
+            padding-left: 15px;
+            border-style: solid;
+            border-radius: 6px;
+            border-width: 1px;
+            border-color: rgb(143, 139, 139);
+            display: flex;
+        }
+
+        h1 {
+            font-style: italic;
+            color: blue;
+            padding-top: 60px;
+            padding-right: 200px;
+        }
+
+        .eye_icon {
+            background-color: white;
+            width: 30px;
+            position: relative;
+            top: 102px;
+            left: 125px;
+            cursor: pointer;
+        }
+
+        #user_icon {
+            position: relative;
+            top: 45px;
+            left: 155px;
+        }
+
+        .forgot_rem {
+            width: 82%;
+            display: flex;
+            margin: 10px;
+            color: black;
+        }
+
+        #fgtpass {
+            background-color: white;
+            margin-left: 50px;
+            border-style: none;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .checkbox {
+            accent-color: blue;
+            cursor: pointer;
+        }
+
+        #login a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #login {
+            margin-top: 30px;
+            width: 84%;
+            height: 40px;
+            background: linear-gradient(to left, rgb(7, 7, 155), rgb(83, 83, 241));
+            border-radius: 10px;
+            border-style: none;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" id="mar">
+        <img id="logo" src="logo1.png">
+        <h2>Student Diary Cloud</h2>
+    </div>
+    <center>
+        <div id="form" align="center">
+            <form action="">
+                <h1>Login</h1>
+                <table>
+                    <tr>
+                        <td><label for="username"></label></td>
+                        <td><input class="inpt" type="text" placeholder="User Name"></td>
+                        <img id="user_icon" src="icons8-user-24.png">
+                    </tr>
+                    <tr>
+                        <td><label for="password"></label></td>
+                        <td><input class="inpt" type="password" placeholder="Password" id="show"></td>
+                        <img class="eye_icon" src="eye1.png" onclick="myfunction()">
+                    </tr>
+                </table>
+                <div class="forgot_rem">
+                    <input type="checkbox" class="checkbox">Remember me
+                    <input type="submit" value="Forgot Password?" id="fgtpass">
+                </div>
+                <button id="login"><a href="home_page.html">Login</a></button>
+            </form>
+        </div>
+    </center>
+    <script>
+        function myfunction() {
+            var x = document.getElementById("show");
+            if (x.type === "password") {
+                x.type = "text";
+            }
+            else {
+                x.type = "password";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
